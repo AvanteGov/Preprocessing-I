@@ -1,1 +1,318 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+.paragraphstyles {
+  font-size: 1rem;
+  color: #a2a1a6;
+}
+.headerstyles {
+  font-size: 2rem;
+  color: #225e9f;
+  text-align: center;
+}
+.topBar {
+  width: 100%;
+  height: 10vh;
+  background-color: #a2a1a6;
+}
+.topBar nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 2% 3% 2%;
+  margin: 0 auto;
+}
+.topBar nav a {
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: #efe9dc;
+}
+header {
+  height: 30vh;
+  width: 100%;
+  background-color: #2a3841;
+  display: flex;
+  align-items: center;
+}
+header div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header div h1 {
+  width: 40%;
+  font-size: 3rem;
+  color: #a2a1a6;
+}
+@media (max-height: 650px) {
+  header div h1 {
+    display: none;
+  }
+}
+img.headshotImg {
+  height: 150px;
+  width: 150px;
+}
+.profile {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: 5px solid #efe9dc;
+  border-right: 5px solid #efe9dc;
+  border-left: 5px solid #efe9dc;
+}
+.profile div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 700px) {
+  .profile div {
+    width: 90%;
+  }
+}
+.profile div img {
+  margin: 0 auto 3% auto;
+}
+.profile div article {
+  text-align: center;
+  font-size: 1rem;
+  color: #a2a1a6;
+}
+.education {
+  display: flex;
+  height: 25vh;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.education div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 5% 0% 5%;
+}
+@media (max-height: 650px) {
+  .education div {
+    flex-direction: column;
+  }
+}
+.education div div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+}
+.education div div span {
+  margin-top: 1%;
+  font-size: 0.75rem;
+}
+.education h2 {
+  margin-bottom: 1%;
+  margin-top: 0.5%;
+  font-size: 2rem;
+  color: #225e9f;
+  text-align: center;
+}
+.skills {
+  height: 65vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-height: 1200px) {
+  .skills {
+    margin-bottom: 50%;
+  }
+}
+.skills img {
+  width: 600px;
+  height: auto;
+}
+@media (max-width: 700px) {
+  .skills img {
+    width: 450px;
+  }
+}
+.skills div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#employmentTitle {
+  font-size: 2rem;
+  color: #225e9f;
+  text-align: center;
+}
+div.jobs {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+div.jobs div {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  margin: 0% auto 5% auto;
+}
+@media (max-height: 550px) {
+  footer {
+    margin-top: 40%;
+  }
+}
+.contactHeader {
+  font-size: 2rem;
+  color: #225e9f;
+  text-align: center;
+}
+.copyright {
+  text-align: center;
+}
